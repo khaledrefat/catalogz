@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+body{
+    width: 100%;
+    height: 460vh;
+    background-image: linear-gradient(#463e67, #473f68, #463e68);
+}
+
+.landing{
+    width: 95%;
+    height: 450vh;
+    background-image: linear-gradient(#242131, #252233);
+    margin: auto;
+    margin-top: 7vh;
+    border-radius: 50px;
+}
+/* nav */
+.landing nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 30px;
+}
+
+.landing nav .logo{
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.landing nav .logo img{
+    width: 40px;
+}
+
+.landing nav .logo span{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #9486FF;
+}
+
+.landing nav .logo h4{
+    font-size: 20px;
+    margin-left: 1px;
+}
+
+.landing nav .links{
+    width: 320px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: #a594e7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.landing nav .links div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing nav .links div i{
+    font-size: 19px;
+    color: #000;
+    transition: all .3s;
+}
+
+.landing nav .links div span{
+    position: absolute;
+    bottom: -20px;
+    font-size: 15px;
+    transition: all .3s;
+    color: #000;
+}
+
+.landing nav .links div:hover i{
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.landing nav .links div:hover span{
+    bottom: 5px;
+    color: #fff;
+}
+
+.landing nav .icon{
+    display: flex;
+    align-items: center;
+}
+
+.landing nav .icon button{
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: bolder;
+    background-color: #9187ff;
+    cursor: pointer;
+    border: 0;
+    transition: all .5s;
+}
+.landing nav .icon i{
+    font-size: 18px;
+    margin: 0 10px 0 ;
+    color: #ddd;
+    cursor: pointer;
+}
+
+/* end nav */
+
+/* header */
+.landing .header{
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+}
+
+.landing .header .text  h1{
+    font-size:70px;
+    line-height: 1.2;
+    color: #6b52d1;
+    background-image: linear-gradient(102deg, #fff, rgb(198, 195, 226), #6e4ee4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.landing .header .text h6{
+    font-size: 15px;
+    margin: 20px 0;
+    color: #6b52d1;
+    background-image: linear-gradient(102deg, #ffffff, #6952b9, #6a55b6c0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.landing .header .text button{
+    width: 180px;
+    height: 40px;
+    background-image: linear-gradient(to right, #9187ff, #5c40c4);
+    border: 0;
+    border-radius: 40px;
+    font-weight: bolder;
+    margin-top: 5px;
+    transition: all .5s;
+}
+
+.landing .header .img{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.landing .header .img img{
+    width: 700px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    z-index: 2;
+    
+}
+
+.landing .header .img svg{
+    width: 300px;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    
+}
+
+.landing .header .img h3{
+    position: absolute;
+    top: 54%;
+    left: 50px;
+    font-size: 130px;
+    font-weight: 900;
+    z-index: 1;
+    color: #9486FF;
+    text-shadow: 10px 10px 100px;
+}
+
+.landing .header .img span{
+    position: absolute;
+    left: 30%;
+    width: 50px;
+    height: 50px;
+    bottom: 35%;
+    border-radius: 50%;
+    box-shadow: -50px -100px 100px 200px #9486ff34;
+}
+/* end header */
+/* section 2 */
+.but{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.but .img, .text{
+    width: 40%;
+    position: relative;
+}
+
+.but .img img{
+    width: 90%;
+    position: relative;
+    z-index: 1;
+}
+
+.but .img span{
+    position: absolute;
+    left: 35%;
+    width: 70px;
+    height: 70px;
+    bottom: 25%;
+    border-radius: 50%;
+    box-shadow: -50px -200px 190px 190px #9486ff2a, 0px 20px 190px 190px #9486ff2a;
+    
+}
+
+.but .text h3{
+    font-size: 42px;
+    background-image: linear-gradient(102deg, #ffffff, #6952b9, #6a55b6c0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.but .text p{
+    font-size: 15px;
+    margin: 20px 0;
+    color: #787587;
+}
+
+.but .text li{
+    margin: 5px 0 15px 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.but .text ul{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.but .text li::after{
+    content: "";
+    width: 30px;
+    height: 1.9px;
+    background-color: #5d4b9e;
+    position: absolute;
+    left: 0;
+}
+
+/* end section 2 */
+/* shield */
+.shield{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.shield h3{
+    text-align: center;
+    font-size: 50px;
+    background-image: linear-gradient(102deg, #fff, #fff, #6952b9, #6a55b6c0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shield .img{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.shield .img img{
+    width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+.shield .img span{
+    position: absolute;
+    bottom: 38%;
+    right: 40%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: -100px -70px 100px 200px #9486ff28, 
+                    50px 50px 200px 250px #9486ff28;
+}
+
+.shield .img .ul-1{
+    position: absolute;
+    left:100px;
+    top: 50px;
+}
+
+.shield .img .ul-2{
+    position: absolute;
+    right:100px;
+    top: 50px;
+    text-align: end;
+}
+
+.shield .img ul li{
+    margin: 10px 0 30px;
+    list-style: none;
+    
+}
+/* end shield */
+
+/* shop */
+.shop{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #a587ffe5;
+    padding: 40px 0 20px;
+    position: relative;
+}
+
+.shop .img-1{
+    width: 320px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100px;
+    background-image: url(images/xbox-3.png);
+    background-size: cover;
+}
+
+.shop .img-2{
+    width: 260px;
+    height: 400px;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: 1;
+    background-image: url(images/xbox-4.png);
+}
+
+.shop .containr{
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    border: 3px solid #8af2ff;
+    background-color: rgba(0, 0, 0, 0.13);
+    border-radius: 50px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.shop .containr h6{
+    font-size: 13px;
+    color: #e3dcff;
+}
+
+.shop .containr h3{
+    font-size: 30px;
+    margin: 15px;
+    font-weight: bolder;
+}
+
+.shop .containr p{
+    color: #8af2ff;
+    font-weight: bold;
+}
+
+.shop .containr button{
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    border: 0;
+    color: #000;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+button:hover{
+    box-shadow: 5px 5px 10px #6952b9;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* end shop */
+/* footer */
+footer{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    position: relative;
+}
+
+footer::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 70px;
+    background-color: #5d40c4b9;
+}
+
+footer .title{
+    width: 100px;
+    height: 35px;
+    border-radius: 40px;
+    position: absolute;
+    top: 53px;
+    left: 48%;
+    z-index: 1;
+    border: 2px solid #5d40c494;
+    background-color: #242131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .title span{
+    margin-right: 5px;
+    color: #9182c7;
+}
+
+footer .foot{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer .foot .links{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .foot .links h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ddd;
+}
+
+footer .foot .links a, p{
+    margin: 8px 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.822);
+    text-decoration: none;
+}
+
+footer .foot .links .icon{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .foot .links .icon div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 9px;
+}
+
+footer .foot .links .icon div i{
+    color: #5c40c4;
+    font-size: 22px;
+    transition: all .5s;
+}
+
+footer .foot .links .icon div:hover i{
+    transform: scale(1.3);
+    text-shadow: 4px 4px 3px ;
+    
+}
+/* end footer */
